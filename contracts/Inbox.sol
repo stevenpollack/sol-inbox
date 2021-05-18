@@ -1,4 +1,4 @@
-pragma solidity >=0.6;
+pragma solidity ^0.4.17;
 
 contract Inbox {
     string public message;
@@ -7,7 +7,7 @@ contract Inbox {
         message = newMessage;
     }
 
-    constructor(string memory initialMsg) {
+    function Inbox(string memory initialMsg) {
         message = initialMsg;
     }
 }
